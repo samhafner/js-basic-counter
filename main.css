@@ -1,0 +1,72 @@
+body {
+    font-family: 'Asap', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: darkgray;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #191b37;
+    color: white;
+    padding: 2rem;
+    width: 360px;
+    border-radius: 15px;
+
+
+
+}
+
+@media only screen and (max-width: 420px) {
+    .container {
+      border-radius: 0;
+    }
+  }
+
+.display-counter {
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    width: 100%;
+}
+
+.btns button {
+    padding: 0.2rem 1rem;
+    border: none;
+    box-shadow: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.btns button:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+#plus, #minus {
+    background-color: #0086fe;
+    color: white;
+}
+
+#reset {
+    background-color: transparent;
+    color: #0086fe;
+    border: 2px solid #0086fe; 
+
+}
